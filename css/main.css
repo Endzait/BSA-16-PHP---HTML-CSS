@@ -131,10 +131,24 @@ footer > section > article > p{
   z-index:-2;
 }
 #after_block:after{
-  content: " _________";
-  width: 10px;
-  height: 10px;
-  top:-50px
-  z-index:100;
-  border: 2px solid black;
+  content: " ";
+       display: block;
+       transform: rotate(-42deg);
+       height: 70px;
+       width: 29px;
+       border-left: 2px solid black;
+       position: absolute;
+       top:108px;
+       left: 528px;
+}
+#after_block:before{
+  content: " ";
+       display: block;
+       transform: rotate(-42deg);
+       height: 125px;
+       width: 29px;
+       border-left: 2px solid black;
+       position: absolute;
+       top:102px;
+       left: 510px;
 }
