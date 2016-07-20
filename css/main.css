@@ -52,8 +52,14 @@ nav ul{
 .main > aside{
   height: 100%;
 }
+.top{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .top >article{
-  display: inline-block;
+
   width: 17em;
   height: 10em;
   margin-top: 2em;
@@ -65,17 +71,9 @@ nav ul{
   padding: 0 0;
 
 }
-.top > article:nth-child(1), article:nth-child(4){
-  margin-left: 5em;
-  margin-right: 1.5em;
-}
-.top > article:nth-child(2), article:nth-child(5){
-  margin-right: 1.5em;
-  margin-left: 1.5em;
-}
-.top > article:nth-child(3), article:nth-child(6){
-  margin-left: 1.5em;
-}
+
+
+
 .top > article:nth-child(4),article:nth-child(5), article:nth-child(6){
   margin-bottom: 6em;
 }
@@ -108,9 +106,16 @@ nav ul{
   height: 50em;
 }
 footer > section > article{
+  position: relative;
+  display: inline-block;
   width: calc(99.5%/3);
   background-color: red;
   text-align: center;
+  border: none;
+}
+footer > section > article:nth-child(2){
+  border-right: 1px solid black;
+  border-right: 1px solid black;
 }
 footer > section > article > p{
   position: relative;
@@ -127,8 +132,11 @@ footer > section > article > p{
   top:50%;
   margin-top:-9px;
 }
+footer{
+  position: relative;
+}
 #after_block{
-  z-index:-2;
+
 }
 #after_block:after{
   content: " ";
@@ -139,7 +147,7 @@ footer > section > article > p{
        border-left: 2px solid black;
        position: absolute;
        top:108px;
-       left: 528px;
+       left: 490px;
 }
 #after_block:before{
   content: " ";
@@ -150,5 +158,5 @@ footer > section > article > p{
        border-left: 2px solid black;
        position: absolute;
        top:102px;
-       left: 510px;
+       left: 470px;
 }
